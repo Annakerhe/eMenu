@@ -1,0 +1,10 @@
+**/logs
+**/bin
+**/obj
+
+/eMenu.Repository/bin
+/eMenu.Repository/obj
+/eMenu.Entities/bin
+/eMenu.Entities/obj
+/eMenu.Services/bin
+/eMenu.Services/obj

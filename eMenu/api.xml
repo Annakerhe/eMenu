@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eMenu</name>
+    </assembly>
+    <members>
+        <member name="T:eMenu.AppConfiguration.ApplicationExtensions.AppExtensions">
+            <summary>
+            Application builder extensions
+            </summary>
+        </member>
+        <member name="M:eMenu.AppConfiguration.ApplicationExtensions.AppExtensions.UseSerilogConfiguration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Use serilog configuration
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:eMenu.AppConfiguration.ApplicationExtensions.AppExtensions.UseSwaggerConfiguration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Use swagger configuration
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:eMenu.AppConfiguration.ServicesExtensions.ServicesExtensions.AddDbContextConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Add serilog configuration
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:eMenu.AppConfiguration.ServicesExtensions.ServicesExtensions.AddMapperConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add serilog configuration
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:eMenu.AppConfiguration.ServicesExtensions.ServicesExtensions.AddSerilogConfiguration(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Add serilog configuration
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:eMenu.Controllers.DishesController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.DishesController.#ctor(eMenu.Services.Abstract.IDishService,AutoMapper.IMapper)">
+            <summary>
+            Dishes controller
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.DishesController.CreateDish(eMenu.Services.Models.DishModel)">
+            <summary>
+            create Dish
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:eMenu.Controllers.DishesController.GetDishes(System.Int32,System.Int32)">
+            <summary>
+            Get Dishes by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:eMenu.Controllers.DishesController.DeleteDish(System.Guid)">
+            <summary>
+            Delete Dish
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.DishesController.GetDish(System.Guid)">
+            <summary>
+            Get Dish
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.DishesController.UpdateDish(System.Guid,eMenu.Models.UpdateDishRequest)">
+            <summary>
+            Update Dish
+            </summary>
+        </member>
+        <member name="T:eMenu.Controllers.DishInOrderController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.DishInOrderController.#ctor(eMenu.Services.Abstract.IDishInOrderService,AutoMapper.IMapper)">
+            <summary>
+            DishInOrder controller
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.DishInOrderController.GetDishInOrder(System.Int32,System.Int32)">
+            <summary>
+            Get DishInOrder by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:eMenu.Controllers.DishInOrderController.UpdateDishInOrder(System.Guid,eMenu.Models.UpdateOrderRequest)">
+            <summary>
+            Update DishInOrder
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.DishInOrderController.DeleteDishInOrder(System.Guid)">
+            <summary>
+            Delete DishInOrder
+            </summary>
+        </member>
+       <member name="M:eMenu.Controllers.DishInOrderController.GetDishInOrder(System.Guid)">
+            <summary>
+            Get DishInOrder
+            </summary>
+        </member>
+        <member name="T:eMenu.Controllers.OrdersController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.OrdersController.#ctor(eMenu.Services.Abstract.IOrderService,AutoMapper.IMapper)">
+            <summary>
+            Orders controller
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.OrdersController.GetOrders(System.Int32,System.Int32)">
+            <summary>
+            Get Orders by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:eMenu.Controllers.OrdersController.UpdateOrders(System.Guid,eMenu.Models.UpdateOrderRequest)">
+            <summary>
+            Update Orders
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.OrdersController.DeleteOrder(System.Guid)">
+            <summary>
+            Delete Order
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.OrdersController.GetOrder(System.Guid)">
+            <summary>
+            Get Order
+            </summary>
+        </member>
+        <member name="T:eMenu.Controllers.TablesController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.TablesController.#ctor(eMenu.Services.Abstract.ITableService,AutoMapper.IMapper)">
+            <summary>
+            Tables controller
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.TablesController.GetTables(System.Int32,System.Int32)">
+            <summary>
+            Get Tables by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:eMenu.Controllers.TablesController.UpdateTable(System.Guid,eMenu.Models.UpdateTableRequest)">
+            <summary>
+            Update Table
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.TablesController.DeleteTable(System.Guid)">
+            <summary>
+            Delete Table
+            </summary>
+        </member>
+         <member name="M:eMenu.Controllers.TablesController.GetTable(System.Guid)">
+            <summary>
+            Get Table
+            </summary>
+        </member>
+        <member name="T:eMenu.Controllers.UsersController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.UsersController.#ctor(eMenu.Services.Abstract.IUserService,AutoMapper.IMapper)">
+            <summary>
+            Users controller
+            </summary>
+        </member>
+       <member name="M:eMenu.Controllers.UsersController.GetUsers(System.Int32,System.Int32)">
+            <summary>
+            Get users by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:eMenu.Controllers.UsersController.UpdateUser(System.Guid,eMenu.Models.UpdateUserRequest)">
+            <summary>
+            Update user
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.UsersController.DeleteUser(System.Guid)">
+            <summary>
+            Delete user
+            </summary>
+        </member>
+        <member name="M:eMenu.Controllers.UsersController.GetUser(System.Guid)">
+            <summary>
+            Get user
+            </summary>
+        </member>
+    </members>
+</doc>
